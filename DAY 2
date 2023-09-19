@@ -1,0 +1,13 @@
+def maxi(X, Y, Z):
+    total_rupees = X * 5 + Y * 10
+    maxi = total_rupees // Z
+    return maxi
+T = int(input())
+results = []
+
+for _ in range(T):
+    X, Y, Z = map(int, input().split())
+    max_pos = maxi(X, Y, Z)
+    results.append(max_pos)
+for result in results:
+    print(result)
