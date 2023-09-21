@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+     int T;
+    std::cin >> T; 
+
+    while (T--) {
+        int X, Y;
+        cin >> X >> Y; 
+        int totalAmount = 0;
+
+        if (Y <= X) {
+            totalAmount = Y; 
+        } else {
+            totalAmount = X + 2 * (Y - X); 
+        }
+
+        std::cout << totalAmount << endl; 
+    }
+	return 0;
+}
